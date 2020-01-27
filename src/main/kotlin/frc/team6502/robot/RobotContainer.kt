@@ -1,6 +1,6 @@
-package frc.team9871.robot
+package frc.team6502.robot
 
-import frc.team9871.robot.subsystems.Drivetrain
+import frc.team6502.robot.subsystems.Drivetrain
 
 /**
  * Initialize devices and frc.team9871.robot.subsystems here

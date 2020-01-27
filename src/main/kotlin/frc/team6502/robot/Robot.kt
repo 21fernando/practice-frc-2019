@@ -1,4 +1,4 @@
-package frc.team9871.robot
+package frc.team6502.robot
 
 import edu.wpi.first.hal.FRCNetComm
 import edu.wpi.first.hal.HAL
@@ -16,8 +16,6 @@ class Robot : TimedRobot() {
         HAL.report(FRCNetComm.tResourceType.kResourceType_Language, 6)
         // initialize RobotContainer and by extension frc.team6502.robot.subsystems
         RobotContainer
-
-        println("Hello world")
     }
 
     override fun robotPeriodic() {

@@ -1,7 +1,7 @@
-package frc.team9871.robot
+package frc.team6502.robot
 import edu.wpi.first.wpilibj.Joystick
 import edu.wpi.first.wpilibj.buttons.JoystickButton
-import frc.team9871.robot.Constants
+import frc.team6502.robot.Constants
 
 object OI {
     val Joystick = Joystick(Constants.xboxControlllerId)
