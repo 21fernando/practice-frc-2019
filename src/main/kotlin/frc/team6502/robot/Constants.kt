@@ -9,4 +9,9 @@ object Constants{
     const val RIGHT_MASTER_ID: Int = 2
     const val RIGHT_SLAVE_ID: Int = 3
     const val JOSYSTICK_ID = 0
+    const val TRIGGER_PORT = 1
+    const val DEADBAND = 0.01
+    const val RATE = 1.0
+    const val EXPO = 0.0
+    const val SUPER_RATE = 0.0
 }

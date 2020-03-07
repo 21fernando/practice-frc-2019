@@ -1,6 +1,4 @@
 package frc.team6502.robot.subsystems
-import com.revrobotics.CANSparkMax
-import com.revrobotics.CANSparkMaxLowLevel
 import edu.wpi.first.wpilibj.Spark
 import edu.wpi.first.wpilibj.SpeedControllerGroup
 import edu.wpi.first.wpilibj.drive.DifferentialDrive
@@ -20,6 +18,13 @@ object Drivetrain: SubsystemBase() {
 
     init {
         this.defaultCommand = DefaultDrive()
+    }
+
+
+    var frontIsFront = 1
+
+    fun switchFrontIsFront(){
+        frontIsFront*=-1
     }
 
     fun drive ( speed :Double, rotation:Double){
