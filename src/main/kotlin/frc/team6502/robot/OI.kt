@@ -1,19 +1,13 @@
 package frc.team6502.robot
-import edu.wpi.first.wpilibj.Joystick
-import edu.wpi.first.wpilibj.buttons.JoystickButton
-import frc.team6502.robot.Constants
 
 object OI {
-    val Joystick = Joystick(Constants.xboxControlllerId)
+    val Joystick = edu.wpi.first.wpilibj.Joystick(Constants.JOSYSTICK_ID)
     val controllerLeftY: Double
-        get() = Joystick.getRawAxis(Constants.leftYAxis)
+        get() = Joystick.getRawAxis(Constants.LEFT_Y_AXIS)
     val controllerLeftX: Double
-        get() = Joystick.getRawAxis(Constants.leftXAxis)
+        get() = Joystick.getRawAxis(Constants.LEFT_X_AXIS)
     val controllerRightY: Double
-        get() = Joystick.getRawAxis(Constants.rightYAxis)
+        get() = Joystick.getRawAxis(Constants.RIGHT_Y_AXIS)
     val controllerRightX: Double
-        get() = Joystick.getRawAxis(Constants.rightXAxis)
-    init{
-
-    }
+        get() = Joystick.getRawAxis(Constants.RIGHT_X_AXIS)
 }

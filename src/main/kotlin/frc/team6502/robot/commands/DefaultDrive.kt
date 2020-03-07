@@ -13,7 +13,7 @@ class DefaultDrive: CommandBase() {
 
     }
     override fun execute() {
-
+        Drivetrain.drive(OI.controllerLeftY, OI.controllerRightX)
     }
 
     override fun isFinished() = false
