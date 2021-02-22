@@ -9,6 +9,8 @@ object OI {
     val Joystick = edu.wpi.first.wpilibj.Joystick(Constants.JOSYSTICK_ID).apply {
         Trigger(BooleanSupplier { getRawButtonPressed(Constants.TRIGGER_PORT) }).whileActiveOnce(ToggleDirection())
     }
+    val controllerX: Double
+        get() = value(Joystick.x)
     val controllerZ: Double
         get() = value(Joystick.z)
     val controllerY: Double
