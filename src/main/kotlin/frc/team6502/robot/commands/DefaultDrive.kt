@@ -28,7 +28,7 @@ class DefaultDrive: CommandBase() {
         } catch (e: Exception) {
             e.printStackTrace()
         }*/
-        Drivetrain.drive(OI.controllerY*Drivetrain.frontIsFront, OI.controllerZ)
+        Drivetrain.drive(OI.controllerY*Drivetrain.frontIsFront, OI.controllerX)
     }
 
     override fun isFinished() = false
